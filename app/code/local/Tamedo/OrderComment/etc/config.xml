@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Tamedo_OrderComment>
+            <version>0.0.1</version>
+        </Tamedo_OrderComment>
+    </modules>
+    <adminhtml>
+        <events>
+            <controller_action_predispatch_adminhtml_sales_order_addComment>
+                <observers>
+                    <Tamedo_OrderComment>
+                        <class>Tamedo_OrderComment_Model_Observer</class>
+                        <method>controllerActionPredispatchAdminhtmlSalesOrderAddComment</method>
+                    </Tamedo_OrderComment>
+                </observers>
+            </controller_action_predispatch_adminhtml_sales_order_addComment>
+            
+            <controller_action_predispatch_adminhtml_sales_order_create_addComment>
+                <observers>
+                    <Tamedo_OrderComment>
+                        <class>Tamedo_OrderComment_Model_Observer</class>
+                        <method>controllerActionPredispatchAdminhtmlSalesOrderCreateAddComment</method>
+                    </Tamedo_OrderComment>
+                </observers>
+            </controller_action_predispatch_adminhtml_sales_order_create_addComment>   
+                    
+            <controller_action_predispatch_adminhtml_sales_order_creditmemo_save>
+                <observers>
+                    <Tamedo_OrderComment>
+                        <class>Tamedo_OrderComment_Model_Observer</class>
+                        <method>controllerActionPredispatchAdminhtmlSalesOrderCreditmemoSave</method>
+                    </Tamedo_OrderComment>
+                </observers>
+            </controller_action_predispatch_adminhtml_sales_order_creditmemo_save>
+            
+            <controller_action_predispatch_adminhtml_sales_order_creditmemo_addComment>
+                <observers>
+                    <Tamedo_OrderComment>
+                        <class>Tamedo_OrderComment_Model_Observer</class>
+                        <method>controllerActionPredispatchAdminhtmlSalesOrderCreditmemoAddComment</method>
+                    </Tamedo_OrderComment>
+                </observers>
+            </controller_action_predispatch_adminhtml_sales_order_creditmemo_addComment>
+            <controller_action_predispatch_adminhtml_sales_order_creditmemo_addComment>
+                <observers>
+                    <Tamedo_OrderComment>
+                        <class>Tamedo_OrderComment_Model_Observer</class>
+                        <method>controllerActionPredispatchAdminhtmlProductReturnEdit</method>
+                    </Tamedo_OrderComment>
+                </observers>
+            </controller_action_predispatch_adminhtml_sales_order_creditmemo_addComment>
+        </events>
+    </adminhtml>   
+</config>

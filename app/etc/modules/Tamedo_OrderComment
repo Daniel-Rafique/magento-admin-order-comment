@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Tamedo_OrderComment>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Tamedo_OrderComment>
+    </modules>
+</config>
